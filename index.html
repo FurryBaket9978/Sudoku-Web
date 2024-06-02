@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sudoku</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <table id="grid">
+        <tr>
+            <td id="button"><button class="cell active"></button></td>
+            <td><button class="cell"></button></td>
+            <td><button class="cell"></button></td>
+            <td><button class="cell"></button></td>
+            <td><button class="cell"></button></td>
+            <td><button class="cell"></button></td>
+            <td><button class="cell"></button></td>
+            <td><button class="cell"></button></td>
+            <td><button class="cell"></button></td>
+        </tr>
+        <tr>
+            <td><button class="cell"></button></td>
+            <td><button class="cell"></button></td>
+            <td><button class="cell"></button></td>
+            <td><button class="cell"></button></td>
+            <td><button class="cell"></button></td>
+            <td><button class="cell"></button></td>
+            <td><button class="cell"></button></td>
+            <td><button class="cell"></button></td>
+            <td><button class="cell"></button></td>
+        </tr>
+        <tr>
+            <td><button class="cell"></button></td>
+            <td><button class="cell"></button></td>
+            <td><button class="cell"></button></td>
+            <td><button class="cell"></button></td>
+            <td><button class="cell"></button></td>
+            <td><button class="cell"></button></td>
+            <td><button class="cell"></button></td>
+            <td><button class="cell"></button></td>
+            <td><button class="cell"></button></td>
+        </tr>
+        <tr>
+            <td><button class="cell"></button></td>
+            <td><button class="cell"></button></td>
+            <td><button class="cell"></button></td>
+            <td><button class="cell"></button></td>
+            <td><button class="cell"></button></td>
+            <td><button class="cell"></button></td>
+            <td><button class="cell"></button></td>
+            <td><button class="cell"></button></td>
+            <td><button class="cell"></button></td>
+        </tr>
+        <tr>
+            <td><button class="cell"></button></td>
+            <td><button class="cell"></button></td>
+            <td><button class="cell"></button></td>
+            <td><button class="cell"></button></td>
+            <td><button class="cell"></button></td>
+            <td><button class="cell"></button></td>
+            <td><button class="cell"></button></td>
+            <td><button class="cell"></button></td>
+            <td><button class="cell"></button></td>
+        </tr>
+        <tr>
+            <td><button class="cell"></button></td>
+            <td><button class="cell"></button></td>
+            <td><button class="cell"></button></td>
+            <td><button class="cell"></button></td>
+            <td><button class="cell"></button></td>
+            <td><button class="cell"></button></td>
+            <td><button class="cell"></button></td>
+            <td><button class="cell"></button></td>
+            <td><button class="cell"></button></td>
+        </tr>
+        <tr>
+            <td><button class="cell"></button></td>
+            <td><button class="cell"></button></td>
+            <td><button class="cell"></button></td>
+            <td><button class="cell"></button></td>
+            <td><button class="cell"></button></td>
+            <td><button class="cell"></button></td>
+            <td><button class="cell"></button></td>
+            <td><button class="cell"></button></td>
+            <td><button class="cell"></button></td>
+        </tr>
+        <tr>
+            <td><button class="cell"></button></td>
+            <td><button class="cell"></button></td>
+            <td><button class="cell"></button></td>
+            <td><button class="cell"></button></td>
+            <td><button class="cell"></button></td>
+            <td><button class="cell"></button></td>
+            <td><button class="cell"></button></td>
+            <td><button class="cell"></button></td>
+            <td><button class="cell"></button></td>
+        </tr>
+        <tr>
+            <td><button class="cell"></button></td>
+            <td><button class="cell"></button></td>
+            <td><button class="cell"></button></td>
+            <td><button class="cell"></button></td>
+            <td><button class="cell"></button></td>
+            <td><button class="cell"></button></td>
+            <td><button class="cell"></button></td>
+            <td><button class="cell"></button></td>
+            <td><button class="cell"></button></td>
+        </tr>
+    </table>
+    <table>
+        <div>
+            <tr>
+                <td><button id="eraser" onclick="erase()">Erase</button></td>
+                <td><button id="restart" onclick="restart()">Restart</button></td>
+                <td><button id="submit" onclick="submit()">Submit</button></td>
+                <td><button id="algorithm" onclick="algorithm()">algorithm</button></td>
+            </tr>
+            <tr>
+                <td><button id="buttonNum" onclick="addNum(1)">1</button></td>
+                <td><button id="buttonNum" onclick="addNum(2)">2</button></td>
+                <td><button id="buttonNum" onclick="addNum(3)">3</button></td>            
+            </tr>
+        </div>
+        <div>        
+            <tr>
+                <td><button id="buttonNum" onclick="addNum(4)">4</button></td>
+                <td><button id="buttonNum" onclick="addNum(5)">5</button></td>
+                <td><button id="buttonNum" onclick="addNum(6)">6</button></td>            
+            </tr>
+        </div>
+        <div class="leftNums">
+            <tr>
+                <td><button id="buttonNum" onclick="addNum(7)">7</button></td>
+                <td><button id="buttonNum" onclick="addNum(8)">8</button></td>
+                <td><button id="buttonNum" onclick="addNum(9)">9</button></td>            
+            </tr>
+        </div>
+        
+    </table>
+</body>
+</html>
